@@ -89,18 +89,13 @@ velocity: (Optional) Instantaneous velocity.
 
 dist_boundary: (Optional) Distance to nearest wall.
 
-## 👥 Authors
-João Antônio Temochko Andre - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)
+---
 
-Johnata Souza Santicioli - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)
+**Authors:**
+* João Antônio Temochko Andre - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)
+* Johnata Souza Santicioli - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)
+* Carolina André da Silva - Universidade do Vale do Itajaí (UNIVALI)
 
-Carolina André da Silva - Universidade do Vale do Itajaí (Univali)
-
-Institutions:
-
-Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)
-
-Universidade do Vale do Itajaí (Univali)
-
-## 📄 License
-This project is licensed under the MIT License.
+**Institutions:**
+* Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)
+* Universidade do Vale do Itajaí (UNIVALI)
