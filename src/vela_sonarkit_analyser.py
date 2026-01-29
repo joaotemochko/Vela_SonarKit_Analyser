@@ -1,8 +1,8 @@
 """
-LYRA Data Analyser - Scientific Analysis Tool
+Vela SonarKit Data Analyser - Scientific Analysis Tool
 =============================================
 A comprehensive GUI tool for analyzing spatial navigation data
-from the Lyra Framework for Non-Visual Spatial Navigation research.
+from the Vela SonarKit Framework for Non-Visual Spatial Navigation research.
 
 Metrics aligned with:
 - Spatial Cognition research (Klatzky et al., Loomis et al.)
@@ -34,10 +34,10 @@ except:
     HAS_SCIPY = False
 
 
-class LyraAnalyser:
+class Vela_SonarKitAnalyser:
     def __init__(self, root: tk.Tk):
         self.root = root
-        self.root.title("Lyra Scientific Data Analyser v1.0 - IFSP & UNIVALI")
+        self.root.title("Vela SonarKit Scientific Data Analyser v1.0 - IFSP & UNIVALI")
         self.root.geometry("1400x900")
         self.root.state("zoomed")
 
@@ -150,7 +150,7 @@ class LyraAnalyser:
 
     def load_csv(self):
         filepath = filedialog.askopenfilename(
-            title="Select Lyra CSV",
+            title="Select Vela SonarKit CSV",
             filetypes=[("CSV", "*.csv"), ("All", "*.*")]
         )
         if not filepath:
@@ -949,7 +949,7 @@ class LyraAnalyser:
             
             # Index file
             with open(os.path.join(folder, f'00_index_{sess}.txt'), 'w') as f:
-                f.write(f"Lyra Scientific Figures\n")
+                f.write(f"Vela SonarKit Scientific Figures\n")
                 f.write(f"Session: {self.current_session}\n")
                 f.write(f"Generated: {datetime.now()}\n")
                 f.write(f"Total Figures: {len(saved)}\n\n")
@@ -975,7 +975,7 @@ class LyraAnalyser:
         
         r = []
         r.append("=" * 60)
-        r.append("LYRA SCIENTIFIC REPORT")
+        r.append("Vela SonarKit SCIENTIFIC REPORT")
         r.append("=" * 60)
         r.append(f"Generated: {datetime.now()}")
         r.append(f"Session: {self.current_session}")
@@ -1071,7 +1071,7 @@ class LyraAnalyser:
         fpath = filedialog.asksaveasfilename(
             title="Save Report",
             defaultextension=".txt",
-            initialfile=f"lyra_report_{sess}.txt"
+            initialfile=f"Vela SonarKit_report_{sess}.txt"
         )
         
         if fpath:
@@ -1083,10 +1083,10 @@ class LyraAnalyser:
                 messagebox.showerror("Error", str(e))
 
     def show_about(self):
-        messagebox.showinfo("About", """LYRA Scientific Data Analyser
+        messagebox.showinfo("About", """Vela SonarKit Scientific Data Analyser
 Version 1.0.0
 
-A comprehensive analysis tool for the Lyra Framework
+A comprehensive analysis tool for the Vela SonarKit Framework
 for Non-Visual Spatial Navigation research.
 
 Features:
@@ -1124,7 +1124,7 @@ def main():
         ttk.Style().theme_use('clam')
     except:
         pass
-    LyraAnalyser(root)
+    Vela_SonarKitAnalyser(root)
     root.mainloop()
 
 
